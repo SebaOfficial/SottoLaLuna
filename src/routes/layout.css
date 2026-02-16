@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+/* Dark mode (class strategy like v3) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	/* === Core Brand Colors (flat names for bg-primary etc.) === */
+	--color-primary: #d11f2a;
+	--color-primary-dark: #a51821;
+	--color-accent-red: #ff4d4d;
+
+	--color-warm-white: #fafaf9;
+	--color-charcoal: #1c1c1c;
+
+	/* Optional: keep a scale if you want */
+	--color-primary-50: #fdf2f3;
+	--color-primary-100: #fbe6e8;
+	--color-primary-200: #f6cdd1;
+	--color-primary-300: #efa3aa;
+	--color-primary-400: #e46973;
+	--color-primary-500: #d11f2a;
+	--color-primary-600: #a51821;
+	--color-primary-700: #8f141c;
+	--color-primary-800: #751117;
+	--color-primary-900: #5e0e13;
+
+	/* === Fonts === */
+	--font-display: 'Plus Jakarta Sans', sans-serif;
+	--font-serif: 'Playfair Display', serif;
+
+	/* === Border Radius === */
+	--radius: 0.25rem;
+	--radius-lg: 0.5rem;
+	--radius-xl: 0.75rem;
+	--radius-full: 9999px;
+}
+
+@layer base {
+	input[type='search']::-webkit-search-cancel-button {
+		display: none;
+	}
+}

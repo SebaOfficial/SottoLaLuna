@@ -1,0 +1,177 @@
+[header] # Sezione in alto del sito
+# Nome del ristorante
+name = "Sotto La Luna"
+# Pulsante per la sezione "Chi Siamo"
+about = "Chi Siamo"
+# Pulsante per la sezione "La Cantina"
+cellar = "La Cantina"
+# Pulsante per il link al menù
+menu = "Menu"
+# Pulsante per la sezione "Dove Siamo"
+whereWeAre = "Dove Siamo"
+# Pulsante per prenotare un tavolo
+book = "Prenota"
+# Pulsante per tradurre il sito
+translate = "Translate"
+
+[hero] # Prima sezione del sito
+# Titolo principale
+title = "Sotto La Luna"
+# Sottotitolo, mostrato sopra il titolo
+subtitle = "Trattoria Piemontese"
+# Breve descrizione del sito, due righe al massimo
+description = "Qua ci sta una descrizione di 2 righe al massimo"
+
+[hero.buttons] # Pulsanti della prima sezione
+# Pulsante con link al menù
+menu = "Scopri il Menu"
+# Pulsante per prenotare un tavolo
+book = "Prenota un Tavolo"
+
+[hero.img] # Immagine dell prima sezione
+# Descrizione significativa dell'immagine, mostrata se l'immagine non viene caricata
+alt = "La Mole Antoneliana"
+
+[about] # Sezione "Chi Siamo"
+# Titolo della sezione
+title = "Benvenuti a Sotto La Luna"
+# Sottotitolo della sezione, mostrato sopra il titolo
+subtitle = "Chi Siamo"
+# Descrizione del ristorante, ogni paragrafo è un elemento della lista
+description = [
+	"""
+Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Quisque faucibus ex sapien vitae pellentesque sem placerat.
+In id cursus mi pretium tellus duis convallis.
+Tempus leo eu aenean sed diam urna tempor.
+	""",
+	"""
+Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+Iaculis massa nisl malesuada lacinia integer nunc posuere.
+Ut hendrerit semper vel class aptent taciti sociosqu.
+Ad litora torquent per conubia nostra inceptos himenaeos.
+	""",
+]
+
+[[about.details]]
+title = "Artigianale"
+description = "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+
+[[about.details]]
+title = "Piemontese"
+description = "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+
+# Immagine della sezione "Chi Siamo"
+[about.img]
+# Descrizione significativa dell'immagine, mostrata se l'immagine non viene caricata
+alt = "Foto del Ristorante"
+
+# Card mostrata sopra l'immagine nella sezione "Chi Siamo"
+[about.img.card]
+# Titolo della card
+title = "Lorem Ipsum"
+# Descrizione della card
+description = "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+
+[menu] # Sezione del menù
+# Titolo della sezione
+title = "Il Nostro Menu"
+# Sottotitolo della sezione, mostrato sopra il titolo
+subtitle = "Il Menù"
+# Breve descrizione del menù, un paragrafo al massimo
+description = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor."
+# Pulsante per vedere il menù completo
+button = "Vedi il Menu"
+
+# Galleria di piatti mostrata nella sezione del menù, ogni elemento ([[menu.gallery]]) è una card con un piatto
+# Nota che il primo elemento della lista sarà associato alla prima immagine (0.jpg), il secondo alla seconda immagine (1.jpg) e così via
+[[menu.gallery]]
+# Bandierina mostrata sopra il titolo del piatto
+flag = "Primo"
+# Titolo del piatto
+title = "Pasta KM0"
+# Lista degli ingredienti del piatto
+ingredients = "Lorem, ipsum, dolor"
+# Breve descrizione del piatto, 2 righe al massimo
+description = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat."
+# Descrizione significativa dell'immagine del piatto, mostrata se l'immagine non viene caricata
+imgAlt = "Descrizione del piatto"
+
+[[menu.gallery]]
+flag = "Secondo"
+title = "Carne alla Griglia"
+ingredients = "Lorem, ipsum, dolor"
+description = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat."
+imgAlt = "Descrizione del piatto"
+
+[[menu.gallery]]
+flag = "Contorno"
+title = "Tiramisù"
+ingredients = "Lorem, ipsum, dolor"
+description = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat."
+imgAlt = "Descrizione del piatto"
+
+[[menu.gallery]]
+flag = "Dolce"
+title = "Tiramisù"
+ingredients = "Lorem, ipsum, dolor"
+description = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat."
+imgAlt = "Descrizione del piatto"
+
+[cellar] # Sezione "La Cantina"
+# Titolo della sezione
+title = "La Nostra Cantina"
+# Sottotitolo della sezione, mostrato sopra il titolo
+subtitle = "La Cantina"
+# Descrizione della cantina
+description = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+
+[bookTable] # Sezione per prenotare un tavolo
+# Titolo della sezione
+title = "Prenota un Tavolo"
+# Breve descrizione per prenotare
+description = "Siamo aperti tutti i giorni, ad eccezione per la domenica, dalle 19 alle 22:30."
+# Email visualizzata sotto il form
+email = "trattoria@sottolaluna.it"
+# Bottone per prenotare
+button = "Prenota su WhatsApp"
+# Template del messaggio precompilato per prenotare un tavolo su WhatsApp, con i segnaposto {guests}, {date} e {time} che verranno sostituiti con i dati inseriti dall'utente
+messageTemplate = "Ciao! Vorrei prenotare un tavolo per {guests} persone {date} alle {time}.\nAvete un tavolo disponibile?"
+
+[bookTable.phoneNumbers] # Numeri di telefono mostrati nel form per prenotare un tavolo
+# Numero visualizzato sotto al form
+restaurant = "+39 011 329 3415"
+# Numero per prenotare su WhatsApp
+reservations = "+39 351 540 0471"
+
+[whereWeAre] # Sezione "Dove Siamo"
+# Titolo della sezione
+title = "Dove Trovarci"
+# Sottotitolo della sezione, mostrato sopra il titolo
+subtitle = "Dove Siamo"
+# Label dell'indirizzo
+address = "Indirizzo"
+# Label degli orari di apertura
+openHours = "Orari di Apertura"
+# Label per le indicazioni stradali
+directions = "Indicazioni Stradali"
+
+[footer] # Footer del sito
+name = "Sotto La Luna"
+description = "Trattoria Piemontese"
+copyright = "© 2026 Sotto La Luna. Tutti i diritti riservati."
+
+[footer.navigation] # Sezione "Navigazione" del footer
+title = "Navigazione"
+backToTop = "Torna Su"
+about = "Chi Siamo"
+menu = "Menù"
+cellar = "La Cantina"
+book = "Prenota"
+whereWeAre = "Dove Siamo"
+
+[footer.openingHours] # Sezione "Orari di Apertura" del footer
+title = "Orari di Apertura"
+
+[footer.location] # Sezione "Dove Siamo" del footer
+title = "Dove Siamo"
