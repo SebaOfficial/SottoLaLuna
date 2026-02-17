@@ -7,10 +7,16 @@
 	import Menu from '$lib/components/sections/Menu.svelte';
 	import BookTable from '$lib/components/sections/BookTable.svelte';
 	import WhereWeAre from '$lib/components/sections/WhereWeAre.svelte';
+	import SEO from 'svelte-seo';
 
 	const { data } = $props();
 	const locale = $derived(data.locale);
 </script>
+
+<!-- TODO: SEO -->
+<SEO
+	title="Sotto La Luna - Trattoria Piemontese a Torino"
+/>
 
 <div id="app">
 	<Header locale={locale.header} />

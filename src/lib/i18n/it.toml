@@ -69,9 +69,9 @@ alt = "Foto del Ristorante"
 # Card mostrata sopra l'immagine nella sezione "Chi Siamo"
 [about.img.card]
 # Titolo della card
-title = "Lorem Ipsum"
+title = "Abbiamo dei Coupon!"
 # Descrizione della card
-description = "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+description = "Vieni a trovarci e scopri i coupon in regalo"
 
 [menu] # Sezione del menù
 # Titolo della sezione

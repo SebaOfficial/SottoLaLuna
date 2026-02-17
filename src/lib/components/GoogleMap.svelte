@@ -11,4 +11,5 @@
 	allowfullscreen={false}
 	loading="lazy"
 	referrerpolicy="no-referrer-when-downgrade"
+	aria-label="Mappa Google della posizione del ristorante"
 ></iframe>

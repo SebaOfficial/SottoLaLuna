@@ -1,9 +1,8 @@
 <script lang="ts">
 	import type { Locale } from '$lib/i18n';
 	import GoogleTranslate from './GoogleTranslate.svelte';
-	import { IconToolsKitchen2 } from '@tabler/icons-svelte-runes';
+	import IconToolsKitchen2 from '@tabler/icons-svelte-runes/icons/tools-kitchen-2';
 	import { scrollTo } from 'svelte-scrolling';
-	import menu from '$lib/assets/menu.pdf?url';
 
 	const { locale }: { locale: Locale['header'] } = $props();
 </script>
@@ -16,7 +15,7 @@
 			<div class="">
 				<IconToolsKitchen2 class="text-3xl text-primary" />
 			</div>
-			<a class="font-serif text-xl font-bold tracking-widest text-charcoal uppercase" href="/">
+			<a class="font-serif text-l md:text-xl text-center font-bold tracking-widest text-charcoal uppercase cursor-pointer" href="/">
 				{locale.name}
 			</a>
 		</div>
@@ -30,7 +29,8 @@
 			</a>
 			<a
 				class="text-sm font-medium text-charcoal/80 transition-colors duration-300 hover:text-primary"
-				href={menu}
+				use:scrollTo={'menu'}
+				href="#menu"
 			>
 				{locale.menu}
 			</a>
@@ -52,7 +52,7 @@
 		<div class="flex items-center gap-6">
 			<GoogleTranslate />
 			<a
-				class="rounded-lg bg-primary px-6 py-2.5 text-sm font-bold text-white shadow-md transition-all hover:bg-primary-dark"
+				class="rounded-lg bg-primary px-6 py-2.5 text-sm font-bold text-white shadow-md transition-all hover:bg-primary-dark hidden md:block"
 				use:scrollTo={'prenota'}
 				href="#prenota"
 			>

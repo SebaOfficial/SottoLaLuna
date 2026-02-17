@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Locale } from '$lib/i18n';
+	import menu from '$lib/assets/menu.pdf?url';
 
 	const { locale }: { locale: Locale['menu'] } = $props();
 
@@ -27,11 +28,12 @@
 				{locale.description}
 			</p>
 		</div>
-		<button
+		<a
 			class="cursor-pointer rounded-lg border-2 border-primary px-10 py-4 font-bold text-primary transition-all duration-300 hover:bg-primary hover:text-white"
+			href={menu}
 		>
 			{locale.button}
-		</button>
+	</a>
 	</div>
 	<div class="mx-auto grid max-w-7xl grid-cols-2 gap-10 px-6 md:grid-cols-4">
 		{#each locale.gallery as dish, index}
@@ -39,7 +41,6 @@
 				<div
 					class="relative mb-8 aspect-4/5 overflow-hidden rounded-xl border border-stone-100 shadow-lg"
 				>
-					<!-- TODO: fix during compilation -->
 					<enhanced:img
 						alt={dish.imgAlt}
 						class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110"

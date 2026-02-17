@@ -12,9 +12,9 @@
 		<div class="col-span-1 md:col-span-1">
 			<div class="mb-8 flex items-center gap-2">
 				<IconToolsKitchen2 class="text-3xl text-white" />
-				<h2 class="font-serif text-xl font-bold tracking-widest text-white uppercase">
+				<h3 class="font-serif text-xl font-bold tracking-widest text-white uppercase">
 					{locale.name}
-				</h2>
+				</h3>
 			</div>
 			<p class="mb-8 text-sm leading-relaxed text-white/80">
 				{locale.description}
@@ -25,16 +25,20 @@
 					href={config.socials.instagram}
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="Instagram"
 				>
 					<IconBrandInstagram size={26} />
+					<span class="sr-only">(si apre in una nuova scheda)</span>
 				</a>
 				<a
 					class="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-white transition-all hover:bg-white hover:text-primary"
 					href={config.socials.facebook}
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="Facebook"
 				>
 					<IconBrandFacebook size={26} />
+					<span class="sr-only">(si apre in una nuova scheda)</span>
 				</a>
 			</div>
 		</div>

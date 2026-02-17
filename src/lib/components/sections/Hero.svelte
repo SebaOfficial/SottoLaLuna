@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Hero from '$lib/assets/hero.jpg?enhanced';
 	import type { Locale } from '$lib/i18n';
-	import { IconChevronCompactDown } from '@tabler/icons-svelte-runes';
+	import IconChevronCompactDown from '@tabler/icons-svelte-runes/icons/chevron-compact-down';
 	import { scrollTo } from 'svelte-scrolling';
 	import menu from '$lib/assets/menu.pdf?url';
 

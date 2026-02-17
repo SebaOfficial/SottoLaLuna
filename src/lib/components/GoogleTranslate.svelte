@@ -1,6 +1,6 @@
 <!-- TODO: implement translation logic -->
 <script lang="ts">
-	import { IconLanguage } from '@tabler/icons-svelte-runes';
+	import IconLanguage from '@tabler/icons-svelte-runes/icons/language';
 </script>
 
 <button

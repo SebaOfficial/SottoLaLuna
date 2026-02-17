@@ -28,10 +28,12 @@
 	});
 </script>
 
+<label for="reservation-date" class="sr-only"> Data e ora </label>
 <input
 	bind:this={picker}
 	class="w-full rounded-xl border border-stone-200 bg-stone-50 py-4 pr-4 pl-12 text-charcoal transition-all outline-none placeholder:text-stone-400 focus:border-primary"
 	type="text"
+	id="reservation-date"
 	placeholder="Seleziona data e ora"
 	required
 	readonly

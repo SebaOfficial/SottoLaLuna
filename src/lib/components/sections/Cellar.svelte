@@ -34,7 +34,7 @@
 		</div>
 
 		<div>
-			<Carousel {images} autoplay={true} />
+			<Carousel {images} autoplay={true} label="Galleria della Cantina" />
 		</div>
 	</div>
 </section>

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Locale } from '$lib/i18n';
 	import About from '$lib/assets/about.jpg?enhanced';
-	import CameraMoon from '@tabler/icons-svelte-runes/icons/camera-moon';
+	import IconTicket from '@tabler/icons-svelte-runes/icons/ticket';
 
 	const { locale }: { locale: Locale['about'] } = $props();
 </script>
@@ -21,7 +21,7 @@
 				class="red-border absolute -right-6 -bottom-6 z-20 hidden rounded-lg bg-white p-8 shadow-xl lg:block"
 			>
 				<div class="mb-2 flex items-center gap-4">
-					<CameraMoon class="text-primary" size={24} />
+					<IconTicket class="text-primary" size={24} />
 					<span class="font-bold text-charcoal italic">{locale.img.card.title}</span>
 				</div>
 				<p class="text-sm text-charcoal/60 italic">{locale.img.card.description}</p>

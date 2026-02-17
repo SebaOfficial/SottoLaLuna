@@ -5,11 +5,12 @@
 
 	type Props = {
 		images: Picture[] | string[];
+		label: string;
 		autoplay?: boolean;
 		interval?: number;
 	};
 
-	const { images, autoplay = false, interval = 4000 }: Props = $props();
+	const { images, label, autoplay = false, interval = 4000 }: Props = $props();
 
 	let current: number = $state(0);
 	let timer: NodeJS.Timeout;
@@ -45,18 +46,24 @@
 	});
 </script>
 
-<div class="relative mx-auto h-full w-full max-w-4xl overflow-hidden rounded-2xl shadow-xl">
+<div
+	class="relative mx-auto h-full w-full max-w-4xl overflow-hidden rounded-2xl shadow-xl"
+	role="region"
+	aria-label={label}
+>
 	<div
 		class="flex transition-transform duration-500 ease-in-out"
 		style="transform: translateX(-{current * 100}%);"
 	>
-		{#each images as image}
+		{#each images as image, index}
 			<div class="min-w-full">
 				<enhanced:img
 					src={image}
 					alt="Slide del Carosello"
 					class="h-96 w-full object-cover md:h-180"
+					loading={index === 0 ? "eager" : "lazy"}
 				/>
+				<div aria-live="polite" class="sr-only">Immagine {current + 1} di {images.length}</div>
 			</div>
 		{/each}
 	</div>
@@ -65,6 +72,7 @@
 	<button
 		onclick={prev}
 		class="absolute top-1/2 left-4 -translate-y-1/2 cursor-pointer rounded-full bg-white/70 p-2 text-gray-800 shadow hover:bg-white"
+		aria-label="Immagine precedente"
 	>
 		<IconChevronCompactLeft class="h-6 w-6" />
 	</button>
@@ -72,6 +80,7 @@
 	<button
 		onclick={next}
 		class="absolute top-1/2 right-4 -translate-y-1/2 cursor-pointer rounded-full bg-white/70 p-2 text-gray-800 shadow hover:bg-white"
+		aria-label="Immagine successiva"
 	>
 		<IconChevronCompactRight class="h-6 w-6" />
 	</button>
@@ -85,6 +94,7 @@
 					current === index ? 'scale-110 bg-white' : 'bg-white/50 hover:bg-white'
 				}`}
 				title="Vai all'immagine {index + 1}"
+				aria-current={current === index}
 			></button>
 		{/each}
 	</div>
