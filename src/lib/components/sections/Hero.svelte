@@ -3,6 +3,7 @@
 	import type { Locale } from '$lib/i18n';
 	import { IconChevronCompactDown } from '@tabler/icons-svelte-runes';
 	import { scrollTo } from 'svelte-scrolling';
+	import menu from '$lib/assets/menu.pdf?url';
 
 	const { locale }: { locale: Locale['hero'] } = $props();
 </script>
@@ -36,7 +37,7 @@
 			</a>
 			<a
 				class="w-full rounded-lg border border-primary/20 bg-white px-10 py-4 text-center font-bold text-primary shadow-sm transition-all hover:bg-stone-50 sm:w-auto"
-				href="/menu.pdf"
+				href={menu}
 			>
 				{locale.buttons.menu}
 			</a>

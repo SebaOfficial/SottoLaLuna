@@ -2,6 +2,15 @@
 	import type { Locale } from '$lib/i18n';
 
 	const { locale }: { locale: Locale['menu'] } = $props();
+
+	const images = Object.entries(
+		import.meta.glob('/src/lib/assets/menu/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}', {
+			eager: true,
+			query: {
+				enhanced: true,
+			},
+		}),
+	).map(([_, module]) => (module as { default: string }).default);
 </script>
 
 <section class="bg-white py-32" id="menu">
@@ -30,10 +39,11 @@
 				<div
 					class="relative mb-8 aspect-4/5 overflow-hidden rounded-xl border border-stone-100 shadow-lg"
 				>
+					<!-- TODO: fix during compilation -->
 					<enhanced:img
 						alt={dish.imgAlt}
 						class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110"
-						src={`./src/lib/assets/menu/${index}.jpg`}
+						src={images[index]}
 					/>
 					<div
 						class="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent opacity-60"

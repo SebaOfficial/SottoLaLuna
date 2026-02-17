@@ -3,6 +3,7 @@
 	import GoogleTranslate from './GoogleTranslate.svelte';
 	import { IconToolsKitchen2 } from '@tabler/icons-svelte-runes';
 	import { scrollTo } from 'svelte-scrolling';
+	import menu from '$lib/assets/menu.pdf?url';
 
 	const { locale }: { locale: Locale['header'] } = $props();
 </script>
@@ -29,7 +30,7 @@
 			</a>
 			<a
 				class="text-sm font-medium text-charcoal/80 transition-colors duration-300 hover:text-primary"
-				href="/menu.pdf"
+				href={menu}
 			>
 				{locale.menu}
 			</a>
