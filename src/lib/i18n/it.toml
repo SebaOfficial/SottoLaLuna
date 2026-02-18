@@ -175,3 +175,10 @@ title = "Orari di Apertura"
 
 [footer.location] # Sezione "Dove Siamo" del footer
 title = "Dove Siamo"
+
+[seo] # Sezione per i testi legati alla SEO
+# Titolo del sito, mostrato nella scheda del browser e usato dai motori
+title = "Sotto La Luna - Trattoria Piemontese"
+# Descrizione del sito, usata dai motori di ricerca
+description = "Sotto La Luna è una trattoria piemontese situata nel cuore di Torino. Offriamo piatti tradizionali preparati con ingredienti freschi e di alta qualità. La nostra cantina vanta una selezione di vini locali e nazionali. Vieni a trovarci per un'esperienza culinaria autentica e accogliente."
+

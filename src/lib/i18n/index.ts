@@ -101,6 +101,10 @@ const LocaleSchema = z.object({
 		openHours: z.string(),
 		directions: z.string(),
 	}),
+	seo: z.object({
+		title: z.string(),
+		description: z.string(),
+	}),
 });
 
 const translations = fs
