@@ -1,4 +1,5 @@
 import config from "$lib/config";
+
 export const prerender = true;
 
 export const GET = () => new Response(`

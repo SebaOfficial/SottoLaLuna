@@ -1,5 +1,7 @@
 import config from '$lib/config';
 
+export const prerender = true;
+
 export const GET = async ({ params }) => new Response(`
 <?xml version="1.0" encoding="UTF-8" ?>
 <urlset
