@@ -2,7 +2,9 @@ import config from '$lib/config';
 
 export const prerender = true;
 
-export const GET = async ({ params }) => new Response(`
+export const GET = async ({ params }) =>
+	new Response(
+		`
 <?xml version="1.0" encoding="UTF-8" ?>
 <urlset
 	xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
@@ -19,10 +21,9 @@ export const GET = async ({ params }) => new Response(`
 	</url>
 </urlset>
 `.trim(),
-	{
-		headers: {
-			'Content-Type': 'application/xml',
+		{
+			headers: {
+				'Content-Type': 'application/xml',
+			},
 		},
-	},
-);
-
+	);

@@ -61,7 +61,7 @@
 					src={image}
 					alt="Slide del Carosello"
 					class="h-96 w-full object-cover md:h-180"
-					loading={index === 0 ? "eager" : "lazy"}
+					loading={index === 0 ? 'eager' : 'lazy'}
 				/>
 				<div aria-live="polite" class="sr-only">Immagine {current + 1} di {images.length}</div>
 			</div>

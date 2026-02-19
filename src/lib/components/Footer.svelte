@@ -1,7 +1,11 @@
 <script lang="ts">
 	import config from '$lib/config';
 	import type { Locale } from '$lib/i18n';
-	import { IconBrandFacebook, IconBrandInstagram, IconToolsKitchen2 } from '@tabler/icons-svelte-runes';
+	import {
+		IconBrandFacebook,
+		IconBrandInstagram,
+		IconToolsKitchen2,
+	} from '@tabler/icons-svelte-runes';
 	import { scrollTo } from 'svelte-scrolling';
 
 	const { locale }: { locale: Locale['footer'] } = $props();

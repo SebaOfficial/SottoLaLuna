@@ -15,7 +15,10 @@
 			<div class="">
 				<IconToolsKitchen2 class="text-3xl text-primary" />
 			</div>
-			<a class="font-serif text-l md:text-xl text-center font-bold tracking-widest text-charcoal uppercase cursor-pointer" href="/">
+			<a
+				class="text-l cursor-pointer text-center font-serif font-bold tracking-widest text-charcoal uppercase md:text-xl"
+				href="/"
+			>
 				{locale.name}
 			</a>
 		</div>
@@ -52,7 +55,7 @@
 		<div class="flex items-center gap-6">
 			<GoogleTranslate />
 			<a
-				class="rounded-lg bg-primary px-6 py-2.5 text-sm font-bold text-white shadow-md transition-all hover:bg-primary-dark hidden md:block"
+				class="hidden rounded-lg bg-primary px-6 py-2.5 text-sm font-bold text-white shadow-md transition-all hover:bg-primary-dark md:block"
 				use:scrollTo={'prenota'}
 				href="#prenota"
 			>

@@ -9,7 +9,7 @@
 					pageLanguage: 'it',
 					autoDisplay: false,
 				},
-				'google_translate_element'
+				'google_translate_element',
 			);
 		};
 
@@ -20,9 +20,7 @@
 	});
 
 	function setLanguage(lang: string) {
-		const select = document.querySelector(
-			'.goog-te-combo'
-		) as HTMLSelectElement;
+		const select = document.querySelector('.goog-te-combo') as HTMLSelectElement;
 
 		if (!select) return;
 
@@ -38,7 +36,5 @@
 	on:click={() => setLanguage(navigator.language.split('-')[0])}
 >
 	<IconLanguage size="25" />
-	<span class="text-[11px] font-bold tracking-wider uppercase">
-		Translate
-	</span>
+	<span class="text-[11px] font-bold tracking-wider uppercase"> Translate </span>
 </button>

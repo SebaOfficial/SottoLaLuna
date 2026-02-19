@@ -33,7 +33,7 @@
 			href={menu}
 		>
 			{locale.button}
-	</a>
+		</a>
 	</div>
 	<div class="mx-auto grid max-w-7xl grid-cols-2 gap-10 px-6 md:grid-cols-4">
 		{#each locale.gallery as dish, index}

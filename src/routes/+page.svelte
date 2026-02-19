@@ -21,7 +21,7 @@
 	description={locale.seo.description}
 	canonical={config.baseUrl}
 	openGraph={{
-		type: 'restaurant',
+		type: 'restaurant.restaurant',
 		title: locale.seo.title,
 		description: locale.seo.description,
 		url: config.baseUrl,
