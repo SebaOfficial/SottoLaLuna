@@ -16,7 +16,7 @@
 		<div class="col-span-1 md:col-span-1">
 			<div class="mb-8 flex items-center gap-2">
 				<IconToolsKitchen2 class="text-3xl text-white" />
-				<h3 class="font-serif text-xl font-bold tracking-widest text-white uppercase">
+				<h3 class="font-serif text-xl font-bold tracking-widest text-white uppercase notranslate">
 					{locale.name}
 				</h3>
 			</div>

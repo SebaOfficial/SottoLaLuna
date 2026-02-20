@@ -8,9 +8,10 @@
 		label: string;
 		autoplay?: boolean;
 		interval?: number;
+		removeDots?: boolean;
 	};
 
-	const { images, label, autoplay = false, interval = 4000 }: Props = $props();
+	const { images, label, autoplay = false, interval = 4000, removeDots = false }: Props = $props();
 
 	let current: number = $state(0);
 	let timer: NodeJS.Timeout;
@@ -86,16 +87,18 @@
 	</button>
 
 	<!-- Dots -->
-	<div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 space-x-2">
-		{#each images as _, index}
-			<button
-				onclick={() => goTo(index)}
-				class={`h-3 w-3 rounded-full transition ${
-					current === index ? 'scale-110 bg-white' : 'bg-white/50 hover:bg-white'
-				}`}
-				title="Vai all'immagine {index + 1}"
-				aria-current={current === index}
-			></button>
-		{/each}
-	</div>
+	{#if !removeDots}
+		<div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 space-x-2">
+			{#each images as _, index}
+				<button
+					onclick={() => goTo(index)}
+					class={`h-3 w-3 rounded-full transition ${
+						current === index ? 'scale-110 bg-white' : 'bg-white/50 hover:bg-white'
+					}`}
+					title="Vai all'immagine {index + 1}"
+					aria-current={current === index}
+				></button>
+			{/each}
+		</div>
+	{/if}
 </div>

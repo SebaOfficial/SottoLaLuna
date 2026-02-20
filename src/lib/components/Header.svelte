@@ -16,7 +16,7 @@
 				<IconToolsKitchen2 class="text-3xl text-primary" />
 			</div>
 			<a
-				class="text-l cursor-pointer text-center font-serif font-bold tracking-widest text-charcoal uppercase md:text-xl"
+				class="text-l cursor-pointer text-center font-serif font-bold tracking-widest text-charcoal uppercase md:text-xl notranslate"
 				href="/"
 			>
 				{locale.name}

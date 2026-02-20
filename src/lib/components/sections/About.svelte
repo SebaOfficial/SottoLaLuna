@@ -1,9 +1,18 @@
 <script lang="ts">
 	import type { Locale } from '$lib/i18n';
-	import About from '$lib/assets/about.jpg?enhanced';
 	import IconTicket from '@tabler/icons-svelte-runes/icons/ticket';
+	import Carousel from '../Carousel.svelte';
 
 	const { locale }: { locale: Locale['about'] } = $props();
+
+	const images = Object.entries(
+		import.meta.glob('/src/lib/assets/about/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}', {
+			eager: true,
+			query: {
+				enhanced: true,
+			},
+		}),
+	).map(([_, module]) => (module as { default: string }).default);
 </script>
 
 <section class="gingham-pattern relative overflow-hidden py-32" id="about">
@@ -12,13 +21,17 @@
 			<div
 				class="absolute -inset-4 rounded-xl border border-primary/10 bg-white/50 transition-colors duration-700 group-hover:border-primary/30"
 			></div>
-			<enhanced:img
-				alt={locale.img.alt}
-				class="relative z-10 h-150 w-full rounded-lg object-cover shadow-2xl"
-				src={About}
-			/>
+			<div>
+				<Carousel
+					{images}
+					interval={5000}
+					autoplay={true}
+					removeDots={true}
+					label="Galleria del locale"
+				/>
+			</div>
 			<div
-				class="red-border absolute -right-6 -bottom-6 z-20 hidden rounded-lg bg-white p-8 shadow-xl lg:block"
+				class="red-border absolute right-0 bottom-0 z-20 rounded-lg bg-white px-8 py-5 shadow-xl md:-right-6 md:-bottom-6 md:py-8 lg:block"
 			>
 				<div class="mb-2 flex items-center gap-4">
 					<IconTicket class="text-primary" size={24} />

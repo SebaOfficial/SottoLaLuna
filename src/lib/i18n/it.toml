@@ -87,9 +87,9 @@ button = "Vedi il Menu"
 # Nota che il primo elemento della lista sarà associato alla prima immagine (0.jpg), il secondo alla seconda immagine (1.jpg) e così via
 [[menu.gallery]]
 # Bandierina mostrata sopra il titolo del piatto
-flag = "Primo"
+flag = "Antipasto"
 # Titolo del piatto
-title = "Pasta KM0"
+title = "Nome dell'antipasto"
 # Lista degli ingredienti del piatto
 ingredients = "Lorem, ipsum, dolor"
 # Breve descrizione del piatto, 2 righe al massimo
