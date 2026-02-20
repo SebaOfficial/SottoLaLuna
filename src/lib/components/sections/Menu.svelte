@@ -36,7 +36,7 @@
 		</a>
 	</div>
 	<div class="mx-auto grid max-w-7xl grid-cols-2 gap-10 px-6 md:grid-cols-4">
-		{#each locale.gallery as dish, index}
+		{#each locale.gallery as dish, index (dish.title)}
 			<div class="group">
 				<div
 					class="relative mb-8 aspect-4/5 overflow-hidden rounded-xl border border-stone-100 shadow-lg"

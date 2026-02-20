@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import type { Locale } from '$lib/i18n';
 	import GoogleTranslate from './GoogleTranslate.svelte';
 	import IconToolsKitchen2 from '@tabler/icons-svelte-runes/icons/tools-kitchen-2';
@@ -16,8 +17,8 @@
 				<IconToolsKitchen2 class="text-3xl text-primary" />
 			</div>
 			<a
-				class="text-l cursor-pointer text-center font-serif font-bold tracking-widest text-charcoal uppercase md:text-xl notranslate"
-				href="/"
+				class="text-l notranslate cursor-pointer text-center font-serif font-bold tracking-widest text-charcoal uppercase md:text-xl"
+				href={resolve('/')}
 			>
 				{locale.name}
 			</a>

@@ -56,7 +56,7 @@
 		class="flex transition-transform duration-500 ease-in-out"
 		style="transform: translateX(-{current * 100}%);"
 	>
-		{#each images as image, index}
+		{#each images as image, index (image)}
 			<div class="min-w-full">
 				<enhanced:img
 					src={image}
@@ -89,7 +89,7 @@
 	<!-- Dots -->
 	{#if !removeDots}
 		<div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 space-x-2">
-			{#each images as _, index}
+			{#each images as _, index (index)}
 				<button
 					onclick={() => goTo(index)}
 					class={`h-3 w-3 rounded-full transition ${

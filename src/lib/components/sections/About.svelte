@@ -46,14 +46,14 @@
 				<span class="text-xs font-bold tracking-widest uppercase">{locale.subtitle}</span>
 			</div>
 			<h2 class="font-serif text-5xl leading-tight text-charcoal md:text-6xl">{locale.title}</h2>
-			{#each locale.description as description}
+			{#each locale.description as description (description)}
 				<p class="text-lg leading-relaxed text-charcoal/70">
 					{description}
 				</p>
 			{/each}
 
 			<div class="grid grid-cols-2 gap-8 pt-4">
-				{#each locale.details as detail}
+				{#each locale.details as detail (detail)}
 					<div>
 						<h4 class="mb-2 font-serif text-2xl text-primary">{detail.title}</h4>
 						<p class="text-sm leading-relaxed text-charcoal/50">

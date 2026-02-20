@@ -18,7 +18,7 @@
 		<span class="mb-6 block text-xs font-bold tracking-[0.4em] text-primary uppercase">
 			{locale.subtitle}
 		</span>
-		<h1 class="mb-8 font-serif text-6xl leading-tight text-charcoal md:text-8xl notranslate">
+		<h1 class="notranslate mb-8 font-serif text-6xl leading-tight text-charcoal md:text-8xl">
 			{locale.title}
 		</h1>
 		<p

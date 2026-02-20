@@ -2,7 +2,7 @@ import config from '$lib/config';
 
 export const prerender = true;
 
-export const GET = async ({ params }) =>
+export const GET = async () =>
 	new Response(
 		`
 <?xml version="1.0" encoding="UTF-8" ?>

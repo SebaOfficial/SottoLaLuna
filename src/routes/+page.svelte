@@ -20,6 +20,7 @@
 	title={locale.seo.title}
 	description={locale.seo.description}
 	canonical={config.baseUrl}
+	themeColor="#b91c1c"
 	openGraph={{
 		type: 'restaurant.restaurant',
 		title: locale.seo.title,
