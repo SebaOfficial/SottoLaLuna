@@ -46,6 +46,7 @@
 	<a
 		class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-primary"
 		use:scrollTo={'about'}
+		aria-label="Scorri in basso"
 		href="#about"
 	>
 		<IconChevronCompactDown class="text-4xl font-extralight" size={48} />

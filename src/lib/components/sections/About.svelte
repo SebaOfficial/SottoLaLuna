@@ -37,7 +37,7 @@
 					<IconTicket class="text-primary" size={24} />
 					<span class="font-bold text-charcoal italic">{locale.img.card.title}</span>
 				</div>
-				<p class="text-sm text-charcoal/60 italic">{locale.img.card.description}</p>
+				<p class="text-sm text-charcoal/80 italic">{locale.img.card.description}</p>
 			</div>
 		</div>
 		<div class="space-y-8">
@@ -55,7 +55,7 @@
 			<div class="grid grid-cols-2 gap-8 pt-4">
 				{#each locale.details as detail (detail)}
 					<div>
-						<h4 class="mb-2 font-serif text-2xl text-primary">{detail.title}</h4>
+						<h3 class="mb-2 font-serif text-2xl text-primary">{detail.title}</h3>
 						<p class="text-sm leading-relaxed text-charcoal/50">
 							{detail.description}
 						</p>
