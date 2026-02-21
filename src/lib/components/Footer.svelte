@@ -113,7 +113,8 @@
 	<div
 		class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 border-t border-white/10 px-6 pt-12 text-[10px] tracking-[0.2em] text-white/40 uppercase md:flex-row"
 	>
-		<p>{locale.copyright}</p>
+		<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+		<p>{locale.copyright} {@html locale.attribution}</p>
 		<div class="flex gap-12">
 			<span>Torino</span>
 			<span>P.iva {config.vatNumber}</span>

@@ -17,6 +17,7 @@ const LocaleSchema = z.object({
 		name: z.string(),
 		description: z.string(),
 		copyright: z.string(),
+		attribution: z.string().nonempty(),
 		navigation: z.object({
 			title: z.string(),
 			backToTop: z.string(),
