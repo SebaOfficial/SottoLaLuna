@@ -105,8 +105,8 @@ description = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque f
 imgAlt = "Descrizione del piatto"
 
 [[menu.gallery]]
-flag = "Contorno"
-title = "Tiramisù"
+flag = "Antipasto"
+title = "Antipasto Piemontese"
 ingredients = "Lorem, ipsum, dolor"
 description = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat."
 imgAlt = "Descrizione del piatto"
