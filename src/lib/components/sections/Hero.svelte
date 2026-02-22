@@ -10,7 +10,13 @@
 
 <section class="relative flex h-screen items-center justify-center overflow-hidden" id="hero">
 	<div class="absolute inset-0 z-0">
-		<enhanced:img src={Hero} alt={locale.img.alt} class="h-full w-full object-cover" />
+		<enhanced:img
+			src={Hero}
+			alt={locale.img.alt}
+			class="h-full w-full object-cover"
+			sizes="(max-width: 768px) 100vw, (max-width: 1280px) 1280px, 2560px"
+			fetchpriority="high"
+		/>
 		<div class="absolute inset-0 bg-white/60"></div>
 	</div>
 
