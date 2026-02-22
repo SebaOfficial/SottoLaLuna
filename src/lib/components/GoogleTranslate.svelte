@@ -30,7 +30,8 @@
 </script>
 
 <svelte:head>
-	<link rel="preconnect" href="https://translate.google.com" />
+	<link rel="preconnect" href="https://translate.google.com" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://translate-pa.googleapis.com" crossorigin="anonymous" />
 </svelte:head>
 
 <div id="google_translate_element" style="display: none;"></div>

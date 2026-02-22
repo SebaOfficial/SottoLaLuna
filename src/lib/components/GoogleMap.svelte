@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<link rel="preconnect" href="https://www.google.com" />
+	<link rel="preconnect" href="https://www.google.com" crossorigin="anonymous" />
 </svelte:head>
 
 <iframe
