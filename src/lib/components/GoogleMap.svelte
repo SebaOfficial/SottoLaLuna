@@ -2,6 +2,10 @@
 	const { mapUrl, width, height }: { mapUrl: string; width: number; height: number } = $props();
 </script>
 
+<svelte:head>
+	<link rel="preconnect" href="https://www.google.com" />
+</svelte:head>
+
 <iframe
 	src={mapUrl}
 	title="Dove Trovarci"

@@ -29,6 +29,10 @@
 	}
 </script>
 
+<svelte:head>
+	<link rel="preconnect" href="https://translate.google.com" />
+</svelte:head>
+
 <div id="google_translate_element" style="display: none;"></div>
 
 <button
