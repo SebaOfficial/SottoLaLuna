@@ -1,0 +1,175 @@
+[header] # Sezione in alto del sito
+# Nome del ristorante mostrato nell'header
+name = "Sotto La Luna"
+# Pulsante per la sezione "Chi Siamo"
+about = "Chi Siamo"
+# Pulsante per la sezione "La Cantina"
+cellar = "La Cantina"
+# Pulsante per il link al menù
+menu = "Menu"
+# Pulsante per la sezione "Dove Siamo"
+whereWeAre = "Dove Siamo"
+# Pulsante per prenotare un tavolo
+book = "Prenota"
+# Pulsante per tradurre il sito
+translate = "Translate"
+
+[hero] # Prima sezione del sito
+# Titolo principale della sezione hero
+title = "Sotto La Luna"
+# Sottotitolo mostrato sopra il titolo
+subtitle = "Trattoria Piemontese nel cuore di Santa Rita"
+# Breve descrizione introduttiva del sito (2 righe max)
+description = "Cucina tipica piemontese fatta in casa, ingredienti di stagione e vini selezionati da piccoli produttori. Un locale d’atmosfera dove tradizione e qualità si incontrano."
+
+[hero.buttons] # Pulsanti della sezione hero
+# Pulsante con link al menù
+menu = "Scopri il Menu"
+# Pulsante per prenotare un tavolo
+book = "Prenota un Tavolo"
+
+[hero.img] # Immagine della sezione hero
+# Testo alternativo dell'immagine, mostrato se l'immagine non viene caricata
+alt = "Sala della trattoria Sotto La Luna a Santa Rita"
+
+[about] # Sezione "Chi Siamo"
+# Titolo principale della sezione
+title = "Benvenuti a Sotto La Luna"
+# Sottotitolo mostrato sopra il titolo
+subtitle = "Chi Siamo"
+# Descrizione del ristorante, ogni paragrafo è un elemento della lista
+description = [
+	"""
+Nel cuore del borgo Santa Rita, Fabrizio vi accoglie in sala mentre Paolo vi conquista in cucina con i sapori autentici della tradizione piemontese. Sotto La Luna è una trattoria d’atmosfera dove sentirsi a casa.
+	""",
+	"""
+Ogni piatto è rigorosamente fatto in casa, preparato con materie prime di stagione e, quando possibile, a km zero. Nessun compromesso sulla qualità, prezzi onesti e sapori che raccontano il Piemonte più vero.
+	""",
+]
+
+[[about.details]] # Card informativa aggiuntiva
+# Titolo della card
+title = "Fatto in Casa"
+# Descrizione della card
+description = "Pasta fresca, pane e dolci preparati ogni giorno nella nostra cucina"
+
+[[about.details]]
+title = "Tradizione Piemontese"
+description = "Ricette storiche come bollito misto, bagna cauda e brasato al Nebbiolo"
+
+[about.img] # Immagine della sezione Chi Siamo
+# Testo alternativo dell'immagine
+alt = "Interno del ristorante con tavoli apparecchiati"
+
+[about.img.card] # Card sopra l'immagine nella sezione Chi Siamo
+# Titolo della card
+title = "Regala un’Esperienza"
+# Testo della card
+description = "Scopri i nostri coupon regalo per Natale, compleanni e occasioni speciali"
+
+[menu] # Sezione del menù
+# Titolo della sezione
+title = "Il Nostro Menu"
+# Sottotitolo mostrato sopra il titolo
+subtitle = "Il Menù"
+# Breve descrizione introduttiva della sezione menù
+description = "Dai grandi classici piemontesi alla pasta fresca fatta in casa, ogni piatto nasce da ingredienti selezionati e lavorazioni artigianali per offrirvi un’esperienza autentica."
+# Pulsante per vedere il menù completo
+button = "Vedi il Menu"
+
+[[menu.gallery]] # Primo piatto mostrato nella galleria
+flag = "Antipasto" # Tipo di piatto
+title = "Bagna Cauda" # Nome del piatto
+ingredients = "Acciughe, aglio, olio, verdure cotte e crude" # Ingredienti principali
+description = "Il simbolo della convivialità piemontese, servita con verdure di stagione selezionate." # Breve descrizione
+imgAlt = "Bagna cauda con verdure miste" # Testo alternativo immagine
+
+[[menu.gallery]]
+flag = "Primo"
+title = "Agnolotti al Sugo di Arrosto"
+ingredients = "Pasta fresca all’uovo, ripieno di carne, fondo d’arrosto"
+description = "Pasta fresca fatta in casa secondo tradizione, condita con il classico sugo piemontese."
+imgAlt = "Agnolotti piemontesi al sugo di arrosto"
+
+[[menu.gallery]]
+flag = "Secondo"
+title = "Bollito Misto alla Piemontese"
+ingredients = "Tagli di manzo selezionati, bagnetto verde, salsa rossa"
+description = "Servito con le sue salse tradizionali, è uno dei piatti più rappresentativi della cucina regionale."
+imgAlt = "Bollito misto con salse piemontesi"
+
+[[menu.gallery]]
+flag = "Dolce"
+title = "Bonet"
+ingredients = "Cacao, amaretti, uova, zucchero, rum"
+description = "Il dolce al cucchiaio simbolo del Piemonte, preparato artigianalmente nella nostra cucina."
+imgAlt = "Bonet piemontese al cacao e amaretti"
+
+[cellar] # Sezione "La Cantina"
+# Titolo principale della sezione
+title = "La Nostra Cantina"
+# Sottotitolo mostrato sopra il titolo
+subtitle = "La Cantina"
+# Descrizione della cantina
+description = "La nostra cantina propone oltre 50 etichette selezionate tra piccoli produttori piemontesi, aziende agricole e cantine sociali. Dalla Barbera Superiore al Dolcetto d’Alba, dal Nebbiolo al Barbaresco, fino all’Arneis e al Prosecco di Valdobbiadene: vini scelti per accompagnare al meglio ogni piatto della tradizione."
+
+[bookTable] # Sezione per prenotare un tavolo
+# Titolo della sezione
+title = "Prenota un Tavolo"
+# Breve descrizione della sezione
+description = "Siamo aperti tutte le sere dalle 19:00 alle 22:30 (chiuso la domenica). Prenota il tuo tavolo e vivi un’autentica esperienza piemontese."
+# Email visualizzata sotto il form
+email = "trattoria@sottolaluna.it"
+# Bottone per prenotare su WhatsApp
+button = "Prenota su WhatsApp"
+# Template del messaggio precompilato con segnaposto {guests}, {date} e {time}
+messageTemplate = "Ciao! Vorrei prenotare un tavolo per {guests} persone {date} alle {time}.\nAvete un tavolo disponibile?"
+
+[bookTable.phoneNumbers] # Numeri di telefono per prenotazioni
+# Numero visualizzato nel form
+restaurant = "+39 011 329 3415"
+# Numero per prenotazioni WhatsApp
+reservations = "+39 351 540 0471"
+
+[whereWeAre] # Sezione "Dove Siamo"
+# Titolo principale
+title = "Dove Trovarci"
+# Sottotitolo mostrato sopra il titolo
+subtitle = "Dove Siamo"
+# Label per l'indirizzo
+address = "Indirizzo"
+# Label per gli orari di apertura
+openHours = "Orari di Apertura"
+# Label per le indicazioni stradali
+directions = "Indicazioni Stradali"
+
+[footer] # Footer del sito
+# Nome del ristorante
+name = "Sotto La Luna"
+# Descrizione breve nel footer
+description = "Trattoria Piemontese a Santa Rita"
+# Copyright
+copyright = "© 2026 Sotto La Luna. Tutti i diritti riservati."
+# Attribuzione sito
+attribution = "Sito creato da <a href=\"https://racca.me/\">Sebastiano Racca</a>"
+
+[footer.navigation] # Navigazione nel footer
+title = "Navigazione"
+backToTop = "Torna Su"
+about = "Chi Siamo"
+menu = "Menù"
+cellar = "La Cantina"
+book = "Prenota"
+whereWeAre = "Dove Siamo"
+
+[footer.openingHours] # Orari di apertura nel footer
+title = "Orari di Apertura"
+
+[footer.location] # Posizione nel footer
+title = "Dove Siamo"
+
+[seo] # Testi per SEO
+# Titolo SEO del sito
+title = "Sotto La Luna | Trattoria Piemontese a Santa Rita Torino"
+# Descrizione SEO del sito
+description = "Sotto La Luna è una trattoria piemontese nel cuore di Santa Rita a Torino. Cucina tipica fatta in casa, ingredienti di stagione, bollito misto, bagna cauda e oltre 50 etichette di vini piemontesi selezionati."
