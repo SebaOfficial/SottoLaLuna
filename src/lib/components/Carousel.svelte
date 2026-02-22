@@ -60,7 +60,7 @@
 			<div class="min-w-full">
 				<enhanced:img
 					src={image}
-					alt="Slide del Carosello"
+					alt="Immagine {index + 1} di {images.length} di {label}"
 					class="h-96 w-full object-cover md:h-180"
 					loading={index === 0 ? 'eager' : 'lazy'}
 				/>
