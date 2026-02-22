@@ -37,9 +37,9 @@ Per modificare le immagini presenti sul sito seguire la seguente legenda con le 
 | [favicon.png](./src/lib/assets/favicon.png)   | [src/lib/assets/](./src/lib/assets/)              | L'immagine mostrata di fianco al nome del sito.              |
 | [hero.jpg](./src/lib/assets/hero.jpg)         | [src/lib/assets/](./src/lib/assets/)              | La prima immagine che si vede quando viene aperto il sito.   |
 | [og-image.jpg](./src/lib/assets/og-image.jpg) | [src/lib/assets/](./src/lib/assets/)              | Immagine usata come preview sui social.                      |
-| [about/*](./src/lib/assets/about/)            | [src/lib/assets/about](./src/lib/assets/about/)   | Immagini che si trovano nel carosello della sezione about.   |
-| [menu/*.jpg](./src/lib/assets/menu/)          | [src/lib/assets/menu](./src/lib/assets/menu/)     | Immagini che rappresentano l'`n`esimo elemento del menù.     |
-| [cellar/*.jpg](./src/lib/assets/cellar/)      | [src/lib/assets/cellar](./src/lib/assets/cellar/) | Immagini che si trovano nel carosello della sezione camtina. |
+| [about/\*](./src/lib/assets/about/)           | [src/lib/assets/about](./src/lib/assets/about/)   | Immagini che si trovano nel carosello della sezione about.   |
+| [menu/\*.jpg](./src/lib/assets/menu/)         | [src/lib/assets/menu](./src/lib/assets/menu/)     | Immagini che rappresentano l'`n`esimo elemento del menù.     |
+| [cellar/\*.jpg](./src/lib/assets/cellar/)     | [src/lib/assets/cellar](./src/lib/assets/cellar/) | Immagini che si trovano nel carosello della sezione camtina. |
 
 ### Fare l'upload di un file
 
