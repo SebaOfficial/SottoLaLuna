@@ -30,7 +30,7 @@ book = "Prenota un Tavolo"
 
 [hero.img] # Immagine della sezione hero
 # Testo alternativo dell'immagine, mostrato se l'immagine non viene caricata
-alt = "Sala della trattoria Sotto La Luna a Santa Rita"
+alt = "Torino con la Mole Antonelliana nello sfondo"
 
 [about] # Sezione "Chi Siamo"
 # Titolo principale della sezione
