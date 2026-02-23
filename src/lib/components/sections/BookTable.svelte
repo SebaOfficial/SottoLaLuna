@@ -73,7 +73,7 @@
 					class="cursor-pointer rounded-xl bg-primary py-4 text-sm font-bold tracking-widest text-white uppercase shadow-lg shadow-primary/20 transition-all hover:bg-primary-dark"
 					type="submit"
 				>
-					Find Table
+					{locale.button}
 				</button>
 			</form>
 			<div
