@@ -34,7 +34,7 @@ alt = "Torino con la Mole Antonelliana nello sfondo"
 
 [about] # Sezione "Chi Siamo"
 # Titolo principale della sezione
-title = "Benvenuti a Sotto La Luna"
+title = "Benvenuti a<span class=\"notranslate\"> Sotto La Luna</span>"
 # Sottotitolo mostrato sopra il titolo
 subtitle = "Chi Siamo"
 # Descrizione del ristorante, ogni paragrafo è un elemento della lista
