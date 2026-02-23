@@ -31,7 +31,7 @@
 				/>
 			</div>
 			<div
-				class="red-border absolute right-0 bottom-0 z-20 rounded-lg bg-white px-8 py-5 shadow-xl md:-right-6 md:-bottom-6 md:py-8 lg:block"
+				class="red-border absolute right-0 -bottom-17 z-20 rounded-lg bg-white px-8 py-5 shadow-xl md:-right-6 md:-bottom-6 md:py-8 lg:block"
 			>
 				<div class="mb-2 flex items-center gap-4">
 					<IconTicket class="text-primary" size={24} />
