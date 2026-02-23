@@ -38,4 +38,13 @@
 	input[type='search']::-webkit-search-cancel-button {
 		display: none;
 	}
+	.font-serif {
+		font-family: 'Playfair Display', serif;
+	}
+	.red-border {
+		border: 1px solid rgba(209, 31, 42, 0.2);
+	}
+	html {
+		scroll-behavior: smooth;
+	}
 }
