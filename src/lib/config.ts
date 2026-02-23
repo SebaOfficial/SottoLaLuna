@@ -21,7 +21,7 @@ const config = {
 		instagram: 'https://www.instagram.com/trattoria.sottolaluna/',
 		facebook: 'https://www.facebook.com/', // TODO: add facebook page
 	},
-	baseUrl: 'https://www.sottolaluna.it',
+	baseUrl: 'https://sottolaluna.it',
 };
 
 export default config;
