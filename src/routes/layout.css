@@ -2,9 +2,6 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
-/* Dark mode (class strategy like v3) */
-@custom-variant dark (&:where(.dark, .dark *));
-
 @theme {
 	/* === Core Brand Colors (flat names for bg-primary etc.) === */
 	--color-primary: #d11f2a;
