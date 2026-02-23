@@ -50,7 +50,7 @@
 
 					<!-- White overlay -->
 					<div
-						class="absolute inset-0 z-10 bg-white/40 transition duration-300 group-hover:bg-white/10"
+						class="absolute inset-0 z-10 bg-black/40 transition duration-300 group-hover:bg-white/10"
 					></div>
 
 					<!-- Black gradient -->
