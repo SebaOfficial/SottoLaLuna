@@ -111,7 +111,7 @@ title = "La Nostra Cantina"
 # Sottotitolo mostrato sopra il titolo
 subtitle = "La Cantina"
 # Descrizione della cantina
-description = "La nostra cantina propone oltre 50 etichette selezionate tra piccoli produttori piemontesi, aziende agricole e cantine sociali. Dalla Barbera Superiore al Dolcetto d’Alba, dal Nebbiolo al Barbaresco, fino all’Arneis e al Prosecco di Valdobbiadene: vini scelti per accompagnare al meglio ogni piatto della tradizione."
+description = "La nostra cantina propone oltre 50 etichette selezionate tra piccoli produttori, aziende agricole e cantine sociali. Dalla Barbera Superiore al Dolcetto d’Alba, dal Nebbiolo al Barbaresco, tutti vini piemontesi scelti per accompagnare al meglio ogni piatto della tradizione."
 
 [bookTable] # Sezione per prenotare un tavolo
 # Titolo della sezione
