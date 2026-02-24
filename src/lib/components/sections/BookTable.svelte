@@ -8,6 +8,7 @@
 		IconMail,
 	} from '@tabler/icons-svelte-runes';
 	import Flatpickr from '$lib/components/Flatpickr.svelte';
+	import config from '$lib/config';
 
 	const { locale }: { locale: Locale['bookTable'] } = $props();
 
@@ -29,7 +30,7 @@
 
 	const onsubmit = (e: Event) => {
 		e.preventDefault();
-		const url = new URL(`https://wa.me/${locale.phoneNumbers.reservations.replaceAll(' ', '')}`);
+		const url = new URL(`https://wa.me/${config.phoneNumbers.reservations.replaceAll(' ', '')}`);
 		const [date, time] = form.datetime.split(' ');
 		url.searchParams.set(
 			'text',
@@ -83,8 +84,8 @@
 					<IconPhoneCall class="text-primary" size={20} />
 					<a
 						class="text-charcoal/90"
-						href="tel:{locale.phoneNumbers.reservations.replaceAll(' ', '')}"
-						>{locale.phoneNumbers.restaurant}</a
+						href="tel:{config.phoneNumbers.reservations.replaceAll(' ', '')}"
+						>{config.phoneNumbers.restaurant}</a
 					>
 				</div>
 				<span class="hidden md:block">|</span>

@@ -87,10 +87,6 @@ const LocaleSchema = z.object({
 	bookTable: z.object({
 		title: z.string(),
 		description: z.string(),
-		phoneNumbers: z.object({
-			restaurant: z.string(),
-			reservations: z.string(),
-		}),
 		messageTemplate: z.string(),
 		email: z.email(),
 		button: z.string(),

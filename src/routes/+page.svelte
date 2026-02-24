@@ -43,7 +43,7 @@
 		name: locale.seo.title,
 		description: locale.seo.description,
 		url: config.baseUrl,
-		telephone: locale.bookTable.phoneNumbers.restaurant,
+		telephone: config.phoneNumbers.restaurant,
 		servesCuisine: 'Italian',
 		menu,
 		priceRange: '$$',

@@ -125,12 +125,6 @@ button = "Prenota su WhatsApp"
 # Template del messaggio precompilato con segnaposto {guests}, {date} e {time}
 messageTemplate = "Ciao! Vorrei prenotare un tavolo per {guests} persone {date} alle {time}.\nAvete un tavolo disponibile?"
 
-[bookTable.phoneNumbers] # Numeri di telefono per prenotazioni
-# Numero visualizzato nel form
-restaurant = "+39 011 329 3415"
-# Numero per prenotazioni WhatsApp
-reservations = "+39 351 540 0471"
-
 [whereWeAre] # Sezione "Dove Siamo"
 # Titolo principale
 title = "Dove Trovarci"
