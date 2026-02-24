@@ -18,8 +18,8 @@ const config = {
 		close: '22:30',
 	},
 	phoneNumbers: {
-		restaurant: "+39 011 329 3415",
-		reservations: "+39 351 540 0471",
+		restaurant: '+39 011 329 3415',
+		reservations: '+39 351 540 0471',
 	},
 	socials: {
 		instagram: 'https://www.instagram.com/trattoria.sottolaluna/',
