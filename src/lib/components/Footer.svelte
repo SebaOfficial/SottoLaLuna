@@ -129,6 +129,7 @@
 		<p>{locale.copyright} {@html locale.attribution}</p>
 		<div class="flex gap-12">
 			<span>Torino</span>
+			<a href={`tel:${config.phoneNumbers.restaurant.replaceAll(' ', '')}`}>{config.phoneNumbers.restaurant}</a>
 			<span>P.iva {config.vatNumber}</span>
 		</div>
 	</div>
