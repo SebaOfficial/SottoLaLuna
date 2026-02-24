@@ -85,7 +85,7 @@
 					<a
 						class="text-charcoal/90"
 						href="tel:{config.phoneNumbers.reservations.replaceAll(' ', '')}"
-						>{config.phoneNumbers.restaurant}</a
+						>{config.phoneNumbers.reservations}</a
 					>
 				</div>
 				<span class="hidden md:block">|</span>
