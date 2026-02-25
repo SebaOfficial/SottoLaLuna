@@ -80,6 +80,10 @@ subtitle = "Il Menù"
 description = "Dai grandi classici piemontesi alla pasta fresca fatta in casa, ogni piatto nasce da ingredienti selezionati e lavorazioni artigianali per offrirvi un’esperienza autentica."
 # Pulsante per vedere il menù completo
 button = "Vedi il Menu"
+# Titolo per la sezione dei piatti tipici
+typical = "Piatti Tipici Piemontesi"
+# Descrizione generale per i piatti tipici
+typicalDescription = "I grandi classici della tradizione piemontese, preparati secondo le ricette di una volta."
 
 [[menu.gallery]] # Primo piatto mostrato nella galleria
 flag = "Antipasto" # Tipo di piatto
@@ -96,18 +100,25 @@ description = "Pasta fresca fatta in casa secondo tradizione, condita con il cla
 imgAlt = "Agnolotti piemontesi al sugo di arrosto"
 
 [[menu.gallery]]
+flag = "Dolce"
+title = "Bonet"
+ingredients = "Cacao, amaretti, uova, zucchero, rum"
+description = "Il dolce al cucchiaio simbolo del Piemonte, preparato artigianalmente nella nostra cucina."
+imgAlt = "Bonet piemontese al cacao e amaretti"
+
+[[menu.typicalDishes]] # Piatti tipici mostrati nella galleria
 flag = "Secondo"
 title = "Bagna Cauda"
 ingredients = "Acciughe, aglio, olio, verdure cotte e crude"
 description = "Il simbolo della convivialità piemontese, servita con verdure di stagione selezionate."
 imgAlt = "Bagna cauda con verdure miste"
 
-[[menu.gallery]]
-flag = "Dolce"
-title = "Bonet"
-ingredients = "Cacao, amaretti, uova, zucchero, rum"
-description = "Il dolce al cucchiaio simbolo del Piemonte, preparato artigianalmente nella nostra cucina."
-imgAlt = "Bonet piemontese al cacao e amaretti"
+[[menu.typicalDishes]]
+flag = "Secondo"
+title = "Bollito Misto Piemontese"
+ingredients = "Manzo, cipolle, aglio, verdure, salse tradizionali"
+description = "Piatto unico tipico della gastronomia piemontese, una variante del semplice bollito"
+imgAlt = "Bollito misto piemontese con salse"
 
 [cellar] # Sezione "La Cantina"
 # Titolo principale della sezione
