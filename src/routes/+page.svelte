@@ -39,13 +39,14 @@
 	jsonLd={{
 		'@context': 'https://schema.org',
 		'@type': 'Restaurant',
+		'@id': `${config.baseUrl}#about`,
 		image: `${config.baseUrl}${ogImage}`,
 		name: locale.seo.title,
 		description: locale.seo.description,
 		url: config.baseUrl,
 		telephone: config.phoneNumbers.restaurant,
 		servesCuisine: 'Italian',
-		menu,
+		hasMenu: `${config.baseUrl}${menu}`,
 		priceRange: '$$',
 		address: {
 			'@type': 'PostalAddress',
@@ -60,6 +61,10 @@
 			latitude: config.map.coordinates.lat,
 			longitude: config.map.coordinates.lng,
 		},
+		areaServed: {
+			'@type': 'City',
+			name: 'Torino',
+		},
 		openingHoursSpecification: [
 			{
 				'@type': 'OpeningHoursSpecification',
@@ -68,8 +73,19 @@
 				closes: config.openingHours.close,
 			},
 		],
-		sameAs: [config.socials.facebook, config.socials.instagram],
+		sameAs: [config.socials.facebook, config.socials.instagram, config.deliveroo.url],
 		email: locale.bookTable.email,
+		potentialAction: {
+			'@type': 'OrderAction',
+			target: {
+				'@type': 'EntryPoint',
+				urlTemplate: config.deliveroo.url,
+				actionPlatform: [
+					'http://schema.org/DesktopWebPlatform',
+					'http://schema.org/MobileWebPlatform',
+				],
+			},
+		},
 	}}
 />
 
