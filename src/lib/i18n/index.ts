@@ -60,7 +60,7 @@ const LocaleSchema = z.object({
 			alt: z.string(),
 			card: z.object({
 				title: z.string(),
-				description: z.string(),
+				description: z.array(z.string()),
 			}),
 		}),
 	}),

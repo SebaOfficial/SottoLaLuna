@@ -2,6 +2,7 @@
 	import type { Locale } from '$lib/i18n';
 	import IconTicket from '@tabler/icons-svelte-runes/icons/ticket';
 	import Carousel from '../Carousel.svelte';
+	import coupon from '$lib/assets/coupon-regalo.pdf?url';
 
 	const { locale }: { locale: Locale['about'] } = $props();
 
@@ -37,7 +38,13 @@
 					<IconTicket class="text-primary" size={24} />
 					<span class="font-bold text-charcoal italic">{locale.img.card.title}</span>
 				</div>
-				<p class="text-sm text-charcoal/80 italic">{locale.img.card.description}</p>
+				<p class="text-sm text-charcoal/80 italic">
+					{locale.img.card.description[0]}
+					<a href={coupon} class="text-primary underline" target="_blank"
+						>{locale.img.card.description[1]}</a
+					>
+					{locale.img.card.description[2]}
+				</p>
 			</div>
 		</div>
 		<div class="space-y-8">

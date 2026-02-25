@@ -63,9 +63,13 @@ alt = "Interno del ristorante con tavoli apparecchiati"
 
 [about.img.card] # Card sopra l'immagine nella sezione Chi Siamo
 # Titolo della card
-title = "Regala un’Esperienza"
+title = "Regala un'Esperienza"
 # Testo della card
-description = "Scopri i nostri coupon regalo per Natale, compleanni e occasioni speciali"
+description = [
+	"Scopri i nostri ",
+	"Coupon", # Link al coupon
+	". Contatta il ristorante per il ritiro del cartaceo e il pagamento"
+]
 
 [menu] # Sezione del menù
 # Titolo della sezione
