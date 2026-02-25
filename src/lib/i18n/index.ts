@@ -96,6 +96,8 @@ const LocaleSchema = z.object({
 		subtitle: z.string(),
 		address: z.string(),
 		openHours: z.string(),
+		takeaway: z.string(),
+		deliveroo: z.string(),
 		directions: z.string(),
 	}),
 	seo: z.object({

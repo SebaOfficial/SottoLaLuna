@@ -13,6 +13,9 @@ const config = {
 			'https://www.google.com/maps/search/?api=1&query=Sotto+La+Luna+Via+Caprera,+54,+10136+Torino+TO',
 		src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5637.460676097705!2d7.6455892!3d45.0506938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886cd70104fd6b%3A0x1f10cc953681e5dd!2sSotto%20La%20Luna!5e0!3m2!1sit!2sit!4v1770485446003!5m2!1sit!2sit',
 	},
+	deliveroo: {
+		url: 'https://deliveroo.it/it/menu/torino/lingotto/trattoria-sotto-la-luna',
+	},
 	openingHours: {
 		open: '19:00',
 		close: '22:30',

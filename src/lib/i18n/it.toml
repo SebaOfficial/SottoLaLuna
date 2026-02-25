@@ -79,24 +79,24 @@ button = "Vedi il Menu"
 
 [[menu.gallery]] # Primo piatto mostrato nella galleria
 flag = "Antipasto" # Tipo di piatto
-title = "Bagna Cauda" # Nome del piatto
-ingredients = "Acciughe, aglio, olio, verdure cotte e crude" # Ingredienti principali
-description = "Il simbolo della convivialità piemontese, servita con verdure di stagione selezionate." # Breve descrizione
-imgAlt = "Bagna cauda con verdure miste" # Testo alternativo immagine
+title = "Vitello Tonnato" # Nome del piatto
+ingredients = "Vitello, tonno sott'olio, uova" # Ingredienti principali
+description = "Carne di vitello all'antica maniera con salse tradizionali piemontesi." # Breve descrizione
+imgAlt = "Vitello tonnato all'antica" # Testo alternativo immagine
 
 [[menu.gallery]]
 flag = "Primo"
 title = "Agnolotti al Sugo di Arrosto"
-ingredients = "Pasta fresca all’uovo, ripieno di carne, fondo d’arrosto"
+ingredients = "Pasta fresca all'uovo, ripieno di carne, fondo d'arrosto"
 description = "Pasta fresca fatta in casa secondo tradizione, condita con il classico sugo piemontese."
 imgAlt = "Agnolotti piemontesi al sugo di arrosto"
 
 [[menu.gallery]]
 flag = "Secondo"
-title = "Bollito Misto alla Piemontese"
-ingredients = "Tagli di manzo selezionati, bagnetto verde, salsa rossa"
-description = "Servito con le sue salse tradizionali, è uno dei piatti più rappresentativi della cucina regionale."
-imgAlt = "Bollito misto con salse piemontesi"
+title = "Bagna Cauda"
+ingredients = "Acciughe, aglio, olio, verdure cotte e crude"
+description = "Il simbolo della convivialità piemontese, servita con verdure di stagione selezionate."
+imgAlt = "Bagna cauda con verdure miste"
 
 [[menu.gallery]]
 flag = "Dolce"
@@ -134,6 +134,10 @@ subtitle = "Dove Siamo"
 address = "Indirizzo"
 # Label per gli orari di apertura
 openHours = "Orari di Apertura"
+# Testo per il servizio da asporto
+takeaway = "È disponibile anche il servizio da asporto con ritiro diretto in ristorante. Ti invitiamo a contattarci con anticipo per prenotare."
+# Testo per il link a deliveroo
+deliveroo = "Ordina su Deliveroo"
 # Label per le indicazioni stradali
 directions = "Indicazioni Stradali"
 
