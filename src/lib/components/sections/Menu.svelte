@@ -13,18 +13,6 @@
 			},
 		}),
 	).map(([_, module]) => (module as { default: string }).default);
-
-	const typicalImages = Object.entries(
-		import.meta.glob(
-			'/src/lib/assets/menu/typical-dishes/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}',
-			{
-				eager: true,
-				query: {
-					enhanced: true,
-				},
-			},
-		),
-	).map(([_, module]) => (module as { default: string }).default);
 </script>
 
 <section class="bg-white py-32" id="menu">
