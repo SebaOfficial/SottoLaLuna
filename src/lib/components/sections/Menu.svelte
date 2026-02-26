@@ -49,22 +49,9 @@
 		</a>
 	</div>
 
-	<div class="mx-auto flex max-w-7xl grid-cols-2 flex-wrap justify-around gap-10 px-6">
+	<div class="mx-auto flex max-w-7xl flex-wrap justify-around gap-10 px-6">
 		{#each locale.gallery as dish, index (dish.title)}
 			<Dish {dish} image={images[index % images.length]} />
-		{/each}
-	</div>
-
-	<div
-		class="mx-auto mb-20 max-w-7xl px-6 md:flex-row md:items-end"
-	>
-		<h3 class="mt-15 mb-6 text-center font-serif text-4xl text-primary">{locale.typical}</h3>
-		<p class="mx-auto mb-20 text-center">{locale.typicalDescription}</p>
-	</div>
-
-	<div class="mx-auto flex max-w-7xl grid-cols-2 flex-wrap justify-around gap-10 px-6">
-		{#each locale.typicalDishes as dish, index (dish.title)}
-			<Dish {dish} image={typicalImages[index % typicalImages.length]} />
 		{/each}
 	</div>
 </section>

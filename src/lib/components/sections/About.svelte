@@ -52,8 +52,8 @@
 				<span class="h-px w-8 bg-primary/50"></span>
 				<span class="text-xs font-bold tracking-widest uppercase">{locale.subtitle}</span>
 			</div>
-			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 			<h2 class="font-serif text-5xl leading-tight text-charcoal md:text-6xl">
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				{@html locale.title}
 			</h2>
 			{#each locale.description as description (description)}

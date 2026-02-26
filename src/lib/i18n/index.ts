@@ -3,14 +3,6 @@ import toml from 'toml';
 import fs from 'fs';
 import path from 'path';
 
-const DishSchema = z.object({
-	title: z.string(),
-	description: z.string(),
-	ingredients: z.string(),
-	flag: z.string(),
-	imgAlt: z.string(),
-});
-
 const LocaleSchema = z.object({
 	header: z.object({
 		name: z.string(),
@@ -77,10 +69,15 @@ const LocaleSchema = z.object({
 		subtitle: z.string(),
 		description: z.string(),
 		button: z.string(),
-		typical: z.string(),
-		typicalDescription: z.string(),
-		gallery: z.array(DishSchema),
-		typicalDishes: z.array(DishSchema),
+		gallery: z.array(
+			z.object({
+				title: z.string(),
+				description: z.string(),
+				ingredients: z.string(),
+				flag: z.string(),
+				imgAlt: z.string(),
+			}),
+		),
 	}),
 	cellar: z.object({
 		title: z.string(),
