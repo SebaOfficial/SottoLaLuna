@@ -16,7 +16,7 @@ export const GET = async () =>
 >
 	<url>
 		<loc>${config.baseUrl}/</loc>
-		<lastmod>2026-02-20</lastmod>
+		<lastmod>2026-02-26</lastmod>
 		<priority>1</priority>
 	</url>
 </urlset>
