@@ -18,14 +18,14 @@
 				<h2 class="font-serif text-5xl text-charcoal">{locale.title}</h2>
 				<div class="space-y-6 text-charcoal/80">
 					<div class="flex items-start gap-4">
-						<IconMapPin class="mt-1 text-primary" />
+						<IconMapPin class="mt-1 text-primary" size={30} />
 						<div>
 							<p class="mb-1 font-bold text-charcoal">{locale.address}</p>
 							<p>{config.map.address}</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
-						<IconClock class="mt-1 text-primary" />
+						<IconClock class="mt-1 text-primary" size={35} />
 						<div>
 							<p class="mb-1 font-bold text-charcoal">{locale.openHours}</p>
 							<p>Lun - Sab: {config.openingHours.open} - {config.openingHours.close}</p>
