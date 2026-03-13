@@ -1,5 +1,6 @@
 <script lang="ts">
 	import config from '$lib/config';
+	import { page } from '$app/state';
 	import type { Locale } from '$lib/i18n';
 	import {
 		IconBrandFacebook,
@@ -54,8 +55,8 @@
 				<li>
 					<a
 						class="transition-colors hover:text-stone-200 focus-visible:ring-offset-primary"
-						href="#hero"
-						use:scrollTo={'hero'}
+						href={page.url.pathname === '/' ? '#hero' : '/#hero'}
+						use:scrollTo={page.url.pathname === '/' ? '#hero' : '/'}
 					>
 						{locale.navigation.backToTop}
 					</a>
@@ -63,7 +64,7 @@
 				<li>
 					<a
 						class="transition-colors hover:text-stone-200 focus-visible:ring-offset-primary"
-						href="#about"
+						href={page.url.pathname === '/' ? '#about' : '/#about'}
 						use:scrollTo={'about'}
 					>
 						{locale.navigation.about}
@@ -72,7 +73,7 @@
 				<li>
 					<a
 						class="transition-colors hover:text-stone-200 focus-visible:ring-offset-primary"
-						href="#menu"
+						href={page.url.pathname === '/' ? '#menu' : '/#menu'}
 						use:scrollTo={'menu'}
 					>
 						{locale.navigation.menu}
@@ -81,7 +82,7 @@
 				<li>
 					<a
 						class="transition-colors hover:text-stone-200 focus-visible:ring-offset-primary"
-						href="#cantina"
+						href={page.url.pathname === '/' ? '#cantina' : '/#cantina'}
 						use:scrollTo={'cantina'}
 					>
 						{locale.navigation.cellar}
@@ -90,7 +91,7 @@
 				<li>
 					<a
 						class="transition-colors hover:text-stone-200 focus-visible:ring-offset-primary"
-						href="#prenota"
+						href={page.url.pathname === '/' ? '#prenota' : '/#prenota'}
 						use:scrollTo={'prenota'}
 					>
 						{locale.navigation.book}
@@ -99,7 +100,7 @@
 				<li>
 					<a
 						class="transition-colors hover:text-stone-200 focus-visible:ring-offset-primary"
-						href="#dovesiamo"
+						href={page.url.pathname === '/' ? '#dovesiamo' : '/#dovesiamo'}
 						use:scrollTo={'dovesiamo'}
 					>
 						{locale.navigation.whereWeAre}

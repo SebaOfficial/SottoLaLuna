@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
+	import { page } from '$app/state';
 	import type { Locale } from '$lib/i18n';
 	import GoogleTranslate from './GoogleTranslate.svelte';
 	import IconToolsKitchen2 from '@tabler/icons-svelte-runes/icons/tools-kitchen-2';
@@ -26,29 +27,29 @@
 		<nav class="hidden items-center gap-10 md:flex">
 			<a
 				class="text-sm font-medium text-charcoal/80 transition-colors duration-300 hover:text-primary"
+				href={page.url.pathname === '/' ? '#about' : '/#about'}
 				use:scrollTo={'about'}
-				href="#about"
 			>
 				{locale.about}
 			</a>
 			<a
 				class="text-sm font-medium text-charcoal/80 transition-colors duration-300 hover:text-primary"
+				href={page.url.pathname === '/' ? '#menu' : '/#menu'}
 				use:scrollTo={'menu'}
-				href="#menu"
 			>
 				{locale.menu}
 			</a>
 			<a
 				class="text-sm font-medium text-charcoal/80 transition-colors duration-300 hover:text-primary"
+				href={page.url.pathname === '/' ? '#cantina' : '/#cantina'}
 				use:scrollTo={'cantina'}
-				href="#cantina"
 			>
 				{locale.cellar}
 			</a>
 			<a
 				class="text-sm font-medium text-charcoal/80 transition-colors duration-300 hover:text-primary"
 				use:scrollTo={'dovesiamo'}
-				href="#dovesiamo"
+				href={page.url.pathname === '/' ? '#dovesiamo' : '/#dovesiamo'}
 			>
 				{locale.whereWeAre}
 			</a>
@@ -58,7 +59,7 @@
 			<a
 				class="hidden rounded-lg bg-primary px-6 py-2.5 text-sm font-bold text-white shadow-md transition-all hover:bg-primary-dark focus-visible:ring-4 focus-visible:ring-primary/60 focus-visible:ring-offset-2 md:block"
 				use:scrollTo={'prenota'}
-				href="#prenota"
+				href={page.url.pathname === '/' ? '#prenota' : '/#prenota'}
 			>
 				{locale.book}
 			</a>
