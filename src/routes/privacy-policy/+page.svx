@@ -1,7 +1,45 @@
 <script lang="ts">
-	//import './style.css';
+	import SEO from 'svelte-seo';
+	import config from '$lib/config';
+
+	const title = "Privacy Policy | Sotto La Luna";
+	const description = "Leggi la privacy policy del ristorante Sotto La Luna a Torino. Informazioni su raccolta, utilizzo e protezione dei dati personali secondo il GDPR.";
 </script>
 
+<SEO
+	{title}
+	{description}
+	canonical={`${config.baseUrl}/privacy-policy`}
+	themeColor="#b91c1c"
+	openGraph={{
+		type: 'website',
+		title: title,
+		description: description,
+		url: `${config.baseUrl}/privacy-policy`,
+		site_name: 'Sotto La Luna',
+		locale: 'it_IT',
+	}}
+	jsonLd={{
+		'@context': 'https://schema.org',
+		'@type': 'PrivacyPolicy',
+		'@id': `${config.baseUrl}/privacy-policy#privacy`,
+		name: title,
+		description: description,
+		url: `${config.baseUrl}/privacy-policy`,
+		inLanguage: 'it',
+		isPartOf: {
+			'@type': 'WebSite',
+			name: 'Sotto La Luna',
+			url: config.baseUrl,
+		},
+		publisher: {
+			'@type': 'Restaurant',
+			name: 'Sotto La Luna',
+			url: config.baseUrl,
+			telephone: config.phoneNumbers.restaurant,
+		},
+	}}
+/>
 
 <div class="mt-25 mb-10 mx-10">
 
