@@ -1,0 +1,28 @@
+<script lang="ts">
+	//import './style.css';
+</script>
+
+
+<div class="mt-25 mb-10 mx-10">
+
+# Privacy Policy
+
+**Informativa privacy ai sensi degli artt. 13-14 del Regolamento Europeo "Privacy" (GDPR)**
+
+I dati personali da Lei inseriti, sono trattati dal titolare del sito www.sottolaluna.it, per finalità connesse alla fornitura dei servizi da Lei richiesti (ad esempio: richiedere informazioni, registrarsi al sito per ricevere vantaggi e offerte, ottenere preventivi, effettuare una prenotazione, scambiare documenti).
+
+Inoltre, i dati da Lei forniti, potrebbero essere trattati, solo su Suo esplicito consenso, al fine di inviarLe comunicazioni di natura commerciale via email o sms relativamente ai servizi offerti dal Titolare.
+
+Nel primo caso, la base giuridica del trattamento è l’esecuzione di un accordo; nel secondo caso è il consenso. I trattamenti avverranno con modalità elettroniche e verranno messi a disposizione delle terze parti (Responsabili Esterni del trattamento) nell’ambito dell’Unione Europea o in Paesi extra UE, regolarmente contrattualizzate e che offrono adeguate garanzie di sicurezza, necessarie per la fornitura di servizi essenziali al soddisfacimento delle Sue esigenze. Tali Responsabili Esterni, il cui elenco è disponibile dietro richiesta, possono appartenere a categorie di soggetti che supportano il Titolare nell’erogazione dei servizi offerti tramite il presente sito (quali, a titolo esemplificativo: sviluppatori software e gestori di siti web, spedizionieri).
+
+Inoltre saranno trattati per finalità di analisi statistiche e di marketing diretto, in maniera anonima, come meglio specificato dalla cookie policy. Trattasi pertanto di trattamenti legittimi e necessari ad assicurarLe un servizio che risponda alle Sue aspettative. I dati saranno conservati per tutta la durata dei servizi da Lei richiesti o per periodi superiori solo se previsti dalle norme. In ogni momento Lei potrà esercitare i diritti previsti agli articoli 15-22 del GDPR contattando il titolare del presente sito.
+
+Per modificare o cancellare i soli dati che sono archiviati sui sistemi che erogano il presente sito inviare una mail a trattoria@sottolaluna.it con Oggetto "Richiesta cancellazione dati". Le informazioni da lei inserite nella mail (compreso il suo indirizzo email) saranno gestite direttamente.
+
+Nel caso di richiesta di cancellazione dei suoi dati, La informiamo che potrebbe non essere più possibile continuare a fornirLe il servizio richiestoci.
+
+La informiamo, infine, che potrà proporre reclamo all’Autorità Garante per la Protezione dei Dati, qualora ritenesse siano stati violati i suoi diritti.
+
+Ai sensi degli artt. 15-22 del GDPR, l’utente ha il diritto di richiedere, scrivendo all’indirizzo del titolare del presente sito, l'accesso ai suoi dati personali, la rettifica o la cancellazione degli stessi o anche semplicemente la limitazione del loro trattamento (anonimizzazione) o proporre reclamo all’Autorità Garante per la Protezione dei Dati, qualora ritenesse siano stati violati i suoi diritti. Per modificare o cancellare i soli dati che sono archiviati sui sistemi che erogano il presente sito inviare una mail a trattoria@sottolaluna.it con Oggetto "Richiesta cancellazione dati".
+
+</div>

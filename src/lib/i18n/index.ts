@@ -26,6 +26,7 @@ const LocaleSchema = z.object({
 			cellar: z.string(),
 			book: z.string(),
 			whereWeAre: z.string(),
+			privacyPolicy: z.string(),
 		}),
 		openingHours: z.object({
 			title: z.string(),

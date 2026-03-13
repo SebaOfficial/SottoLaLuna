@@ -177,6 +177,7 @@ menu = "Menù"
 cellar = "La Cantina"
 book = "Prenota"
 whereWeAre = "Dove Siamo"
+privacyPolicy = "Privacy Policy"
 
 [footer.openingHours] # Orari di apertura nel footer
 title = "Orari di Apertura"

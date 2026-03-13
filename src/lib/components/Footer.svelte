@@ -105,6 +105,14 @@
 						{locale.navigation.whereWeAre}
 					</a>
 				</li>
+				<li>
+					<a
+						class="transition-colors hover:text-stone-200 focus-visible:ring-offset-primary"
+						href="/privacy-policy"
+					>
+						{locale.navigation.privacyPolicy}
+					</a>
+				</li>
 			</ul>
 		</div>
 		<div>

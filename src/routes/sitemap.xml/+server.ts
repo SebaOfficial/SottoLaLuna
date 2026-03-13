@@ -16,8 +16,14 @@ export const GET = async () =>
 >
 	<url>
 		<loc>${config.baseUrl}/</loc>
-		<lastmod>2026-02-26</lastmod>
+		<lastmod>2026-03-13</lastmod>
 		<priority>1</priority>
+	</url>
+
+	<url>
+		<loc>${config.baseUrl}/privacy-policy</loc>
+		<lastmod>2026-03-13</lastmod>
+		<priority>0.8</priority>
 	</url>
 </urlset>
 `.trim(),
